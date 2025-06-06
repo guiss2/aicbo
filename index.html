@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIC | Artificial Intelligence Community</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Favicon opcional -->
+  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon" /> -->
+</head>
+<body>
+  <!-- ENCABEZADO -->
+  <header class="sticky-header">
+    <div class="logo-container">
+      <img src="logo-aic.png" alt="Logo AIC" class="logo" />
+      <h1>AIC</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#acerca">Acerca de</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#registro">Registro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section id="inicio" class="seccion">
+      <h2>Bienvenidos a AIC</h2>
+      <p>Impulsando el conocimiento en inteligencia artificial</p>
+      <img src="img/inicio.jpg" alt="Bienvenida" class="imagen-seccion" />
+    </section>
+
+    <!-- ACERCA DE -->
+    <section id="acerca" class="seccion">
+      <h2>Acerca de AIC</h2>
+      <p>Somos una comunidad dedicada a promover la educación, el desarrollo y la colaboración en temas de inteligencia artificial.</p>
+      <img src="img/acerca.jpg" alt="Sobre nosotros" class="imagen-seccion" />
+    </section>
+
+    <!-- EVENTOS -->
+    <section id="eventos" class="seccion">
+      <h2>Eventos</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="img/evento1.jpg" alt="Taller de visión artificial" />
+          <p>Taller de visión artificial 2024</p>
+        </div>
+        <div class="card">
+          <img src="img/evento2.jpg" alt="Charla de ética en IA" />
+          <p>Charla de ética en IA</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECURSOS -->
+    <section id="recursos" class="seccion">
+      <h2>Recursos</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="img/recurso1.jpg" alt="Guía de IA" />
+          <p>Guía básica de IA</p>
+        </div>
+        <div class="card">
+          <img src="img/recurso2.jpg" alt="Intro a Python" />
+          <p>Video: Introducción a Python</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTRO -->
+    <section id="registro" class="seccion">
+      <h2>Registro a Evento</h2>
+      <form id="form-asistencia">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+        <label for="celular">Número de celular</label>
+        <input type="tel" id="celular" name="celular" placeholder="Ej. 71234567" required />
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required />
+
+        <label for="actividad">Actividad</label>
+        <select id="actividad" name="actividad">
+          <option value="Taller de visión artificial">Taller de visión artificial</option>
+          <option value="Charla ética IA">Charla ética en IA</option>
+        </select>
+
+        <button type="submit">Registrarse</button>
+      </form>
+      <div id="mensaje"></div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; 2025 AIC - Artificial Intelligence Community</p>
+  </footer>
+
+  <!-- Carga el JS como módulo -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
